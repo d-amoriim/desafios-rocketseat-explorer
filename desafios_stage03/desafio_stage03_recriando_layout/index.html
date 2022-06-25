@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Stage 03 - Desafio 01</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/variables.css">
+</head>
+
+<body>
+    <div class="global_box">
+        <header class="header_wrapper">
+            <h1 class="header_h1">Mentoria</h1>
+            <p class="header_p">Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+        <main">
+            <form class="form_box" id="form">
+                <!--Seção informações pessoais-->
+                <fieldset class="fieldset_wrapper">
+                    <legend class="form_text_legend">Informações pessoais</legend>
+                    <section class="section_informations_wrapper">
+                        <div class="form_informations">
+                            <label class="form_text_label" for="name">Nome</label>
+                            <input class="form_input" type="text" id="name" autofocus required>
+                        </div>
+                        <div class="form_informations">
+                            <label class="form_text_label" for="second-name">Sobrenome</label>
+                            <input class="form_input" type="text" id="second-name">
+                        </div>
+
+                    </section>
+                    <div class="input_wrapper">
+                        <label class="form_text_label" for="mentor_email">Email<span
+                                class="form_text_span_label">(digite um email válido)</span></label>
+                        <input class="form_input" type="email" id="mentor_email" placeholder="example@email.com">
+                    </div>
+                    <div class="input_wrapper">
+                        <label class="form_text_label" for="mentor_password">Senha<span
+                                class="form_text_span_label">(mínimo de 6 caracteres)</span></label>
+                        <input class="form_input" type="password" id="mentor_password" minlength="8" maxlength="16"
+                            placeholder="********">
+                    </div>
+                </fieldset>
+                <!--Seção informações do mentor-->
+                <fieldset class="fieldset_wrapper">
+                    <legend class="form_text_legend">Informações do mentor</legend>
+                    <div class="input_wrapper">
+                        <label class="form_text_label" for="mentor_name">Nome do seu mentor<span
+                                class="form_text_span_label">(só o primeiro nome)</span></label>
+                        <input class="form_input" type="email" id="mentor_name">
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset_wrapper">
+                    <legend class="form_text_legend">Seus horários disponíveis</legend>
+                    <div class="input_wrapper">
+                        <legend class="form_text_legendt">Primeira Mentoria</legend>
+                        <section class="section_date_wrapper">
+                            <div class="form_date">
+                                <label class="form_text_label" for="date">Data<span
+                                        class="form_text_span_label">(DD/MM/AAAA)</span></label>
+                                <input class="form_input" type="text" id="date">
+                            </div>
+                            <div class="form_date_wrapper">
+                                <div class="form_date">
+                                    <label class="form_text_label" for="das">Das<span
+                                            class="form_text_span_label">(DD/MM/AAAA)</span></label>
+                                    <input class="form_input" type="time" id="das">
+                                </div>
+                                <div class="form_date">
+                                    <label class="form_text_label" for="ate">Até<span
+                                            class="form_text_span_label">(DD/MM/AAAA)</span></label>
+                                    <input class="form_input" type="time" id="ate">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="input_wrapper">
+                        <legend class="form_text_legendt">Segunda Mentoria</legend>
+                        <section class="section_date_wrapper">
+                            <div class="form_date">
+                                <label class="form_text_label" for="sec-date">Data<span
+                                        class="form_text_span_label">(DD/MM/AAAA)</span></label>
+                                <input class="form_input" type="text" id="sec-date">
+                            </div>
+                            <div class="form_date_wrapper">
+                                <div class="form_date">
+                                    <label class="form_text_label" for="sec-das">Das<span
+                                            class="form_text_span_label">(DD/MM/AAAA)</span></label>
+                                    <input class="form_input" type="time" id="sec-das">
+                                </div>
+                                <div class="form_date">
+                                    <label class="form_text_label" for="sec-ate">Até<span
+                                            class="form_text_span_label">(DD/MM/AAAA)</span></label>
+                                    <input class="form_input" type="time" id="sec-ate">
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="footer_button_wrapper">
+                <button class="footer_button" form="form">Salvar</button>
+            </div>
+            </main>
+            <footer>
+                <p>Desenvolvido para estudo</p>
+                <a href="https://github.com/d-amoriim" target="_blank">@Github</a>
+            </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-fundo);
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+
+    height: 43rem;
+    width: 100%;
+
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+    background-color: var(--azul-principal);
+}
+
+.global_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    max-width: 75rem;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header_wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.8rem;
+    max-width: 35rem;
+    margin: 14rem 0 0;
+}
+
+.header_h1 {
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 6rem;
+
+    color: var(--branco);
+}
+
+.header_p {
+    font-size: 2rem;
+    line-height: 3rem;
+
+    color: var(--branco);
+}
+
+/* Form */
+.form_box {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+
+    padding: 6.4rem;
+    border-radius: 2rem 2rem 0 0;
+    box-shadow: 5px 2px 42px 7px rgba(0, 0, 0, 0.12);
+    background-color: var(--branco);
+}
+
+.fieldset_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.section_informations_wrapper {
+    display: flex;
+    gap: 2.2rem;
+}
+
+.input_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.form_informations {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+}
+
+.section_date_wrapper {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.section_date_wrapper>.form_date:first-child {
+    width: 100%;
+}
+
+.form_date {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_date_wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Form texts and inputs */
+.form_text_legend {
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--azul-principal);
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+
+    padding: 0 0 1.6rem 0;
+    margin-bottom: 3.2rem;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.form_text_legendt {
+    width: 100%;
+    text-transform: uppercase;
+    color: var(--azul-principal);
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.4rem;
+}
+
+.form_text_label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    max-width: max-content;
+}
+
+.form_input {
+    height: 5.6rem;
+    padding: 0 2.0rem 0;
+
+    font-family: inherit;
+    border-radius: 0.8rem;
+    /*border: 1px solid var(--cor-borda);*/
+
+    background-color: var(--fundo-input);
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.1);
+
+    outline: none;
+    transition: .3s;
+}
+
+.form_input:hover {
+    background-color: #dadada23;
+}
+
+.form_input:focus {
+    font-weight: 600;
+    font-family: inherit;
+    background-color: #dadada67;
+}
+
+.form_text_span_label {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+
+    margin-left: 1.2rem;
+    color: var(--cinza-principal);
+
+    transition: .3s;
+}
+
+.form_text_span_label:hover {
+    color: var(--cinza-secundario);
+}
+
+
+/* Form pseudoclasses and pseudoelements */
+.form_input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    color: var(--cinza-principal);
+}
+
+/* Footer */
+.footer_button_wrapper {
+    display: flex;
+    justify-content: center;
+
+    padding: 5.2rem 7.1rem;
+    border-radius: 0px 0px 2rem 2rem;
+    background-color: var(--azul-principal);
+}
+
+.footer_button {
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    width: 100%;
+
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: var(--branco);
+
+    border-radius: 2rem;
+    background-color: var(--vermelho-botao);
+
+    transition: .3s;
+}
+.footer_button:hover {
+    transform: scale(1.01);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5rem 0 2rem;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+
+    font-size: 1.4rem;
+    line-height: 1rem;
+}
+footer p::before {
+    content: '\2139';
+}
+footer a {
+    text-decoration: none;
+    color: var(--preto);
+
+    font-size: 1.2rem;
+    font-weight: normal;
+}
