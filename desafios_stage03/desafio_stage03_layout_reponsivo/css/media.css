@@ -1,0 +1,81 @@
+@media (min-width: 992px) {
+  .global-box {
+    flex-direction: row;
+    align-items: initial;
+    height: 100vh;
+    gap: 0;
+  }
+
+  .header-box {
+    max-width: 38rem;
+    gap: 3.2rem;
+  }
+
+  .header-box h1 {
+    padding: .8rem 0;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 8rem;
+  }
+
+  .main-box {
+    min-width: 40rem;
+    padding: 0;
+    gap: 0;
+  }
+
+  .header-p {
+    display: inline;
+    max-width: 27.5rem;
+    color: var(--white);
+  }
+
+  .main-p {
+    display: none;
+  }
+
+  .card-copy {
+    display: inline;
+    position: relative;
+  }
+
+  .section-grid-box {
+    grid-template-areas: "A B C"
+      "D B E"
+      "D F E";
+  }
+
+  .section-grid-box div:first-child {
+    grid-area: A;
+  }
+
+  .section-grid-box div:nth-child(2) {
+    grid-area: B;
+  }
+
+  .section-grid-box div:nth-child(3) {
+    grid-area: C;
+  }
+
+  .section-grid-box div:nth-child(4) {
+    grid-area: D;
+  }
+
+  .section-grid-box div:nth-child(5) {
+    grid-area: F;
+  }
+
+  .section-grid-box div:nth-child(6) {
+    grid-area: E;
+  }
+
+  .footer,
+  .footer-span {
+    display: inline;
+  }
+}

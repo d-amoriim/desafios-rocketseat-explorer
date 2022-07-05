@@ -1,0 +1,159 @@
+:root {
+  font-size: 62.5%;
+  /* variables */
+  --white: #FFFFFF;
+  --black: #000000;
+  --body-bg: #EFF1FF;
+  --bg-header: #8E9AAF;
+  --bg-header-h1: #CBC0D3;
+  --bg-card-p: #FEEAFA;
+  --gray-100: #4A4E69;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg);
+  font-size: 1.6rem;
+  font-family: 'Palanquin', sans-serif;
+}
+
+.global-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.4rem;
+}
+
+/*header*/
+.header-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+  width: 100%;
+  padding: 3rem 0;
+  background-color: var(--bg-header);
+}
+.header-logo {
+  animation: float infinite 2s;
+}
+.header-box h1 {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  letter-spacing: 0.05rem;
+
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  color: var(--white);
+
+  padding: .8rem;
+  background-color: var(--bg-header-h1);
+}
+
+.header-p {
+  display: none;
+}
+
+/*main*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.5rem;
+  padding: 0 3.2rem 6.5rem;
+}
+
+.main-p,
+.header-p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+
+  text-align: center;
+  max-width: 30.5rem;
+  padding: 0 3.2rem;
+}
+
+.section-grid-box {
+  display: grid;
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-copy {
+  display: none;
+  cursor: pointer;
+}
+
+.card img,
+.card-copy img {
+  width: 100%;
+  animation: slide-top .8s;
+  transition: .3s;
+}
+
+.card img:hover,
+.card-copy img:hover {
+  filter: brightness(.6) saturate(1.5);
+  transform: scale(1.02);
+}
+
+.card-p {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  z-index: 1;
+
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  letter-spacing: .2rem;
+  color: var(--gray-100);
+  border-radius: 2rem;
+
+  padding: 0 1.2rem;
+  background-color: var(--bg-card-p);
+
+  animation: slide-bottom .8s;
+}
+
+.footer,
+.footer-span {
+  display: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: var(--gray-100);
+}
+
+.footer-span {
+  font-weight: bold;
+  color: var(--black);
+  cursor: pointer;
+}
